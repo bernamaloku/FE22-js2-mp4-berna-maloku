@@ -1,3 +1,4 @@
+//en klass och fyra instansvariabler som tillhör denna klass.
 class Calculator {
   previousOperandTextElement: HTMLElement;
   currentOperandTextElement: HTMLElement;
@@ -5,6 +6,7 @@ class Calculator {
   previousOperand: string;
   operation: string | undefined;
 
+  //en konstruktor för klassen. Det tar emot två argument, båda av typen "HTMLElement", som representerar elementen.
   constructor(
     previousOperandTextElement: HTMLElement,
     currentOperandTextElement: HTMLElement
@@ -14,6 +16,7 @@ class Calculator {
     this.clear();
   }
 
+  //metoder i calculator klassen.
   clear(): void {
     this.currentOperand = "";
     this.previousOperand = "";
@@ -39,6 +42,7 @@ class Calculator {
     this.currentOperand = "";
   }
 
+  //denna kod definierar en metod som heter "compute" i en kalkylator-klassen, vilken utför aritmetiska beräkningar baserat på den aktuella och tidigare operanden samt den valda operationen. Den konverterar först operanderna från strängar till nummer, utför sedan den motsvarande aritmetiska operationen baserat på den valda operationen, och lagrar resultatet i en variabel "computation". Om operanderna inte är giltiga nummer eller om ingen operation är vald, returneras utan att något räknas ut. Det här är en metod som jag fått hjälp från youtube videos och lite mer advancerat än det vi har lärt oss.
   compute(): void {
     let computation: number;
     const prev: number = parseFloat(this.previousOperand);
@@ -98,6 +102,7 @@ class Calculator {
   }
 }
 
+//hämtar element från HTML filen och lägger addEventListener för varje knapp.
 const numberButtons = document.querySelectorAll<HTMLElement>("[data-number]");
 const operationButtons =
   document.querySelectorAll<HTMLElement>("[data-operation]");
@@ -148,6 +153,7 @@ equalsButton.addEventListener("click", (button) => {
   calculator.updateDisplay();
 });
 
+//det här skapar en kalkylator element som hämtar en bild som finns på src/images.mapen
 const calculatorElement = previousOperandTextElement.parentElement;
 const imgUrl = new URL("images/pic.jpg", import.meta.url);
 if (calculatorElement !== null) {
