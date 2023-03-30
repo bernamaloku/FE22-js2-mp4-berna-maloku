@@ -14,4 +14,4 @@ Projektet har använt olika dependencies och för att kunna se alla så ska du
 
 --- 
 
-##### Öppna koden för att se mer kommentarer om vad som skrivs (HTML & TS)
+##### Öppna filerna i src mappen för att se mer kommentarer om vad som händer i koden (HTML & TS)
