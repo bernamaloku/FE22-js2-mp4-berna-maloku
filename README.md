@@ -11,3 +11,7 @@ Projektet har använt olika dependencies och för att kunna se alla så ska du
 * Öppna terminalen i VSC
 * Skriv npm install i terminalen
 * Voila! Lycka till
+
+--- 
+
+##### Öppna koden för att se mer kommentarer om vad som skrivs (HTML & TS)
