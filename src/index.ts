@@ -1,3 +1,5 @@
+//Vill bara påpeka att jag har fått hjälp av en Youtube video för att kunna jobba vidare med detta projekt. Jag har dock INTE bara kopierat och klistrat in. Jag har  gått genom varje rad kod och förstått hur kodden är uppbygt och även skrivit om det på mitt sätt och det har varit till stor hjälp. 
+
 //en klass och fyra instansvariabler som tillhör denna klass.
 class Calculator {
   previousOperandTextElement: HTMLElement;
